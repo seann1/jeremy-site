@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paintings — Jeremy Scott Kemp</title>
+
+  <!-- GLightbox -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Jeremy Scott Kemp</h1>
+    <p class="tagline">Paintings &amp; Cake Decoration</p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="paintings.html" class="nav-active">Paintings</a>
+      <a href="cakes.html">Cake Decoration</a>
+    </nav>
+  </header>
+
+  <main>
+    <gallery-section
+      title="Paintings"
+      gallery="paintings"
+    ></gallery-section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Jeremy Scott Kemp. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  <script src="gallery-data.js"></script>
+  <script src="gallery-section.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
