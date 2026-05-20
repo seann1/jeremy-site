@@ -127,6 +127,68 @@ main {
   font-size: 0.95rem;
 }
 
+/* ── Active nav link ── */
+
+nav a.nav-active {
+  border-color: var(--accent-light);
+}
+
+/* ── Landing page ── */
+
+main.landing {
+  max-width: 900px;
+  margin: 6rem auto;
+  padding: 0 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+@media (max-width: 540px) {
+  main.landing {
+    grid-template-columns: 1fr;
+  }
+}
+
+.landing-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  border: 1px solid #e0d8d0;
+  border-radius: 6px;
+  text-decoration: none;
+  color: var(--accent);
+  background: #fff;
+  transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
+}
+
+.landing-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  border-color: var(--accent-light);
+}
+
+.landing-card h2 {
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: normal;
+  letter-spacing: 0.03em;
+}
+
+.landing-card--paintings {
+  background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
+              url('images/paintings/5D6D394E-BFCE-4569-AFFA-42CE9A517015.jpg') center / cover no-repeat;
+  border-color: transparent;
+  color: #fff;
+}
+
+.landing-card--cakes {
+  background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
+              url('images/cakes/IMG_0447.JPEG') center / cover no-repeat;
+  border-color: transparent;
+  color: #fff;
+}
+
 /* ── Footer ── */
 
 footer {

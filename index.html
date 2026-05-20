@@ -5,9 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jeremy Scott Kemp</title>
 
-  <!-- GLightbox -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
-
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -16,32 +13,24 @@
     <h1>Jeremy Scott Kemp</h1>
     <p class="tagline">Paintings &amp; Cake Decoration</p>
     <nav>
-      <a href="#paintings">Paintings</a>
-      <a href="#cakes">Cake Decoration</a>
+      <a href="paintings.html">Paintings</a>
+      <a href="cakes.html">Cake Decoration</a>
     </nav>
   </header>
 
-  <main>
-    <gallery-section
-      id="paintings"
-      title="Paintings"
-      gallery="paintings"
-    ></gallery-section>
-
-    <gallery-section
-      id="cakes"
-      title="Cake Decoration"
-      gallery="cakes"
-    ></gallery-section>
+  <main class="landing">
+    <a href="paintings.html" class="landing-card landing-card--paintings">
+      <h2>Paintings</h2>
+    </a>
+    <a href="cakes.html" class="landing-card landing-card--cakes">
+      <h2>Cake Decoration</h2>
+    </a>
   </main>
 
   <footer>
     <p>&copy; <span id="year"></span> Jeremy Scott Kemp. All rights reserved.</p>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
-  <script src="gallery-data.js"></script>
-  <script src="gallery-section.js"></script>
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
